@@ -3,9 +3,9 @@
  ## Key requirement: company needs docmentationthat salaried employees did or did not get overtime each week
  
  ## Models
- - Post -> data: date rationale:text
- x User -> Devise
- x AdminUser -> STI
+ - x Post -> data: date rationale:text
+ - x User -> Devise
+ - x AdminUser -> STI
  
 
  ## Features:
