@@ -10,6 +10,8 @@ class PostsController < ApplicationController
     
     def create
         @post = Post.new(post_params)
+        # byebug
+        @post.user_id = current_user.id
         if @post.save        
             redirect_to @post, notice: 'Your post was created successfully'
         else
@@ -23,7 +25,7 @@ class PostsController < ApplicationController
     
     private
         def post_params
-            params.require(:post).permit(:data, :rationale)
+            params.require(:post).permit(:date, :rationale)
         end
         
         def set_post
