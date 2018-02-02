@@ -6,17 +6,17 @@ describe 'navigate' do
         login_as(@user, :scope => :user)
     end
     describe 'index' do
-        before do
-            visit posts_path
-        end
+        # before do
+        #     visit posts_path
+        # end
         
         it 'can be reached successfully' do
-            # visit posts_path
+             visit posts_path
             expect(page.status_code).to eq(200)
         end
         
         it 'has a title of Posts' do 
-            # visit posts_path
+            visit posts_path
             expect(page).to have_content(/All the Posts/)
         end
         
@@ -50,6 +50,28 @@ describe 'navigate' do
             click_on "Save"
             
             expect(User.last.posts.last.rationale).to eq("User Association")
+        end
+    end
+    
+    describe 'edit' do
+        
+        before do
+            @post = FactoryBot.create(:third_post)
+        end
+        it 'can be reached by clicking edit button in index page' do 
+            
+            visit posts_path
+            
+            click_link( "edit_#{@post.id}")
+            expect(page.status_code).to eql(200)        
+        end
+        
+        it 'can be edited' do
+            visit edit_post_path(@post)
+            fill_in 'post[date]', with: Date.today
+            fill_in 'post[rationale]', with: "Edited Content"            
+            click_on "Save"            
+            expect(page).to have_content("Edited Content")  
         end
     end
 end
