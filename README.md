@@ -16,4 +16,7 @@
  - Needs to be documented if employee did not log overtime
  
  ## UI:
- - xBootstrap -> formatting 
+ - x Bootstrap -> formatting 
+ - Icon from Font Awesome
+ - Update the styles for forms
+ 
