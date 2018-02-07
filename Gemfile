@@ -65,3 +65,5 @@ gem 'gritter', '~> 1.2'
 
 gem 'administrate', '~> 0.8.1'
 gem 'bourbon', '~> 5.0'
+
+gem 'pundit', '~> 1.1'
