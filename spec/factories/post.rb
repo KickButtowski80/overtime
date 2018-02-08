@@ -2,13 +2,13 @@ FactoryBot.define do
 
     factory :post do
         date Date.today
-        rationale "I am rationale"
+        rationale "rationale"
         user
     end 
     
     factory :second_post, class: "Post" do 
         date Date.yesterday
-        rationale "I am anotehr rationale content"
+        rationale "rationale-content"
         user
     end
     
@@ -18,4 +18,10 @@ FactoryBot.define do
         user
     end
     
+    factory :post_from_other_user, class: "Post" do
+        date Date.yesterday
+        rationale "This post shouldn't be seen"
+        user created_at(:other_user)
+        association :post, factory: :user
+    end
 end
