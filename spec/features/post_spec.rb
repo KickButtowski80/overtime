@@ -36,7 +36,7 @@ describe 'navigate' do
         
         it 'has a scope so that only post creators can see their posts' do
             # post_from_other_user = FactoryBot.build(:post_from_other_user)
-            other_user = User.create(first_name: "Non", last_name: "Authorized", email: "nonauth@example.com", password: "asdfasdf", password_confirmation:"asdfasdf")
+            other_user = User.create(first_name: "Non", last_name: "Authorized", email: "nonauth@example.com", password: "asdfasdf", password_confirmation:"asdfasdf", phone: "66666666")
             post_from_other_user = Post.create(date: Date.today, rationale: "This post shouldn't be seen", user_id: other_user.id, overtime_request: 2.0)
             # byebug
             visit posts_path

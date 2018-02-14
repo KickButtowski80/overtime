@@ -27,7 +27,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
-  validates_presence_of :first_name, :last_name
+  validates_presence_of :first_name, :last_name, :phone
   # it seems it adds such a feature to user table and we can user like Post.first.user.full_name 
   def full_name
     last_name.upcase + ", " + first_name.upcase
