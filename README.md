@@ -6,7 +6,7 @@
  - x Post -> data: date rationale:text
  - x User -> Devise
  - x AdminUser -> STI
- 
+ - AduitLog
 
  ## Features:
  - Approval Workflow
@@ -18,6 +18,8 @@
  
  ## UI:
  - x Bootstrap -> formatting 
- - Icon from Font Awesome
+ - x Icon from glyphicon
  - x Update the styles for forms
  
+## Refactor TODOS:
+ - x Refactor posts/_form for admin user with status
