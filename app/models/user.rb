@@ -33,7 +33,7 @@ class User < ApplicationRecord
   
   validates_format_of :phone, with: PHONE_REGEX
   
-  validates :phone, length: {is: 10}
+  validates :phone, length: { is: 10 }
   # it seems it adds such a feature to user table and we can user like Post.first.user.full_name 
   def full_name
     last_name.upcase + ", " + first_name.upcase
