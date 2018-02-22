@@ -8,7 +8,8 @@ class PostsController < ApplicationController
         # end
         
         # investigate later from pundit gem
-  
+        @posts = Post.all
+        authorize @posts
     end
     
     def new
