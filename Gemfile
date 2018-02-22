@@ -71,5 +71,7 @@ gem 'pundit', '~> 1.1'
 gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1', :groups => [:development, :test]
 
-
+# for database realtionship diagram
 gem 'rails-erd', require: false, group: :development
+
+gem 'kaminari', '~> 1.1', '>= 1.1.1'

@@ -28,7 +28,9 @@
 				<tbody>
 				 
 				   <!--move the whole commented codes to partial post in view an refactor is follow -->
-				   <%= render @posts%>
+				   			
+				   	<%= render @posts%>		
+				 
 					<!--<tr>-->
 					<%#@posts.each do |post| %>
 					<!--	<td>-->
@@ -47,3 +49,4 @@
 					<%#end%>-->
 					 </tbody>
 					 </table>
+	<%= paginate  @posts%>
