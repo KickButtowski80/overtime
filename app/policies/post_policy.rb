@@ -1,4 +1,14 @@
 class PostPolicy < ApplicationPolicy
+    def index?
+        if(user.type == 'AdminUser') 
+            @posts = Post.all
+        else
+            @posts = Post.posts_by(user) 
+        end
+        
+    end
+    
+    
  #record is a post in our case   
     def update?
         return true if record.approved? && admin? 

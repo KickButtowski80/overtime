@@ -1,11 +1,14 @@
 class PostsController < ApplicationController
     before_action :set_post, only: [:show, :edit, :update, :destroy]
     def index
-        if(current_user.type == 'AdminUser') 
-            @posts = Post.all
-        else
-            @posts = Post.posts_by(current_user) 
-        end
+        # if(current_user.type == 'AdminUser') 
+        #     @posts = Post.all
+        # else
+        #     @posts = Post.posts_by(current_user) 
+        # end
+        
+        # investigate later from pundit gem
+  
     end
     
     def new
