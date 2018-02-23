@@ -25,11 +25,11 @@
 						</th>
 					</tr>
 				</thead>
-				<tbody>
+				<tbody id="posts">
 				 
 				   <!--move the whole commented codes to partial post in view an refactor is follow -->
-				   			
-				   	<%= render @posts%>		
+			        <%= render @posts %>
+				   		
 				 
 					<!--<tr>-->
 					<%#@posts.each do |post| %>
@@ -49,4 +49,6 @@
 					<%#end%>-->
 					 </tbody>
 					 </table>
-	<%= paginate  @posts%>
+					 <div id="paginator">
+					 	<%= paginate  @posts , remote: true%>
+					 </div>
