@@ -1,16 +1,35 @@
 
 <div class="container-fluid">
     <div class="well  row ">
-        <h1>Hi <%=admin.full_name%></h1>
-        <h4> Role: <%= admin.type %></h4>
-        <h4> Today: <%=Date.today %> </h4>
-         
+         <h1>Hi <%=admin.full_name%></h1>
+         <div class="col-md-6 col-sm-6">
+            <h4> Role: <%= admin.type %></h4>
+            <h4> Today: <%=Date.today %> </h4>
+         </div>
+        <div class="col-md-6 col-sm-6">
+            <h4> Time: <%=Time.now.strftime(" %I:%M%p") %></h4>
+        </div>         
     </div>
     <div class='pending-homepage row' >
         <div class="homepage-block col-md-3">
         
         <p>hello</p>
         </div>
+                 <div class="homepage-block col-md-3">
+        
+        <p>hello</p>
+        </div>
+         
+                 <div class="homepage-block col-md-3">
+        
+        <p>hello</p>
+        </div>
+         
+                 <div class="homepage-block col-md-3">
+        
+        <p>hello</p>
+        </div>
+         
          
     
     </div>

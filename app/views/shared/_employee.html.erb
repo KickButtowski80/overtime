@@ -1,5 +1,13 @@
-<div class="well">
-    <h1>Hi <%= employee.full_name %></h1>
-    <h4> Role: Employee</h4>
-    <h4> Today: <%=Date.today %></h4>
+<div class="container-fluid">    
+    <div class="well row">
+        <h1>Hi <%= employee.full_name %></h1>
+         <div class="col-md-6 col-sm-6">
+            <h4> Role: Employee </h4>
+            <h4> Today: <%=Date.today %> </h4>
+         </div>
+        <div class="col-md-6 col-sm-6">
+            <h4> Time: <%=Time.now.strftime(" %I:%M%p") %></h4>
+        </div>
+    </div>
 </div>
+
