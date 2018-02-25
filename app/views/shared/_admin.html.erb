@@ -12,33 +12,14 @@
         </div>         
     </div>
     <div class='pending-homepage row' >
-        <div class="homepage-block col-md-3">
-        
-        <p>hello</p>
-        </div>
-                 <div class="homepage-block col-md-3">
-        
-        <p>hello</p>
-        </div>
-         
-                 <div class="homepage-block col-md-3">
-        
-        <p>hello</p>
-        </div>
-         
-                 <div class="homepage-block col-md-3">
-        
-        <p>hello</p>
-        </div>
-         
-         
-    
-    </div>
-    
+        <h2>Items Pending Your Approval</h2>
+        <hr/>
+        <%= render partial: 'shared/pending_approval', locals: {pending_approvals: @pending_approvals}%>
+    </div>    
     <div class="pending-homepage">
-   
-</div>
+        <div>
+            <p>hello</p>
+        </div>
 
-
-
+    </div>
 </div>
