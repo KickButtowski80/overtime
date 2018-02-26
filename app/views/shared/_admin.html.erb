@@ -9,17 +9,21 @@
         <div class="col-md-6 col-sm-6">
               <!--TODO time doesn't get refershed and has to be refershed manually-->
             <h4> Time: <%=Time.now.strftime(" %I:%M%p") %></h4>
+            <h4>Tasks:</h4>
+            <ul>
+                <li><%= link_to 'Items Pendingfor Approvel', '#items_pending'%> </li>
+                <li><%= link_to 'Items Approved', '#items_approved'%></li>
+            </ul>
         </div>         
     </div>
     <div class='pending-homepage row' >
-        <h2>Items Pending Your Approval</h2>
+        <h2 id='items_pending'>Items Pending Your Approval</h2>
         <hr/>
         <%= render partial: 'shared/pending_approval', locals: {pending_approvals: @pending_approvals}%>
     </div>    
-    <div class="pending-homepage">
-        <div>
-            <p>hello</p>
-        </div>
-
+    <div class="pending-homepage row">
+        <h2 id='items_approved'>Confirmation Log</h2>
+        <hr/>
+        <%= render partial: 'shared/confirmation_log', locals: {pending_approvals: @recent_audit_items}%>
     </div>
 </div>
