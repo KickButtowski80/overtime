@@ -13,9 +13,13 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="jumbotron col-md-5 employee_blocks">My Name is Izak</div>
-        <div class="col-md-2"></div>
-        <div class="jumbotron col-md-5 employee_blocks">My Last name Is Tarashandegan</div>
+        <div class="pending-homepage  employee_blocks">
+            <h3>Pending Your Confirmation</h3>
+            <%= render partial: 'pending_audit_confirmations' , locals: {pending_audit_confirmations: @pending_audit_confirmations} %>
+        </div>
+        <div class="pending-homepage employee_blocks">
+        
+        </div>
     </div>
 </div>
 
