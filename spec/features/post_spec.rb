@@ -19,7 +19,7 @@ describe 'navigate' do
         
         it 'has a title of Posts' do 
             visit posts_path
-            expect(page).to have_content(/All the Posts/)
+            expect(page).to have_content(/Post Dashboard/)
         end
         
         # it 'has a list of posts' do 
