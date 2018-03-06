@@ -52,6 +52,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'annotate'
+  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -69,7 +70,7 @@ gem 'bourbon', '~> 5.0'
 gem 'pundit', '~> 1.1'
 
 gem 'twilio-ruby', '~> 4.11', '>= 4.11.1'
-gem 'dotenv-rails', '~> 2.2', '>= 2.2.1', :groups => [:development, :test]
+# gem 'dotenv-rails', '~> 2.2', '>= 2.2.1' , :groups => [:development, :test]
 
 # for database realtionship diagram
 gem 'rails-erd', require: false, group: :development
