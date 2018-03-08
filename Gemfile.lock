@@ -55,7 +55,7 @@ GEM
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 13.0)
     arel (8.0.0)
-    autoprefixer-rails (8.1.0)
+    autoprefixer-rails (8.1.0.1)
       execjs
     bcrypt (3.1.11)
     bcrypt (3.1.11-java)
@@ -170,8 +170,8 @@ GEM
     pg (0.21.0-x64-mingw32)
     pg (0.21.0-x86-mingw32)
     public_suffix (3.0.2)
-    puma (3.11.2)
-    puma (3.11.2-java)
+    puma (3.11.3)
+    puma (3.11.3-java)
     pundit (1.1.0)
       activesupport (>= 3.0.0)
     rack (2.0.4)
@@ -199,6 +199,11 @@ GEM
       ruby-graphviz (~> 1.2)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (5.1.5)
       actionpack (= 5.1.5)
       activesupport (= 5.1.5)
@@ -320,6 +325,7 @@ DEPENDENCIES
   pundit (~> 1.1)
   rails (~> 5.1.4)
   rails-erd
+  rails_12factor
   rspec-rails (~> 3.4, >= 3.4.2)
   sass-rails (~> 5.0)
   selenium-webdriver (~> 3.9)

@@ -75,3 +75,5 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'rails-erd', require: false, group: :development
 
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
+
+gem 'rails_12factor', group: :production
