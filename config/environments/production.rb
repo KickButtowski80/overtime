@@ -94,5 +94,5 @@ Rails.application.configure do
   config.serve_static_files = true 
   config.assets.digest = true
   
-   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { :host => 'overtime-kick-buttoskw.herokuapp.com' }
 end
