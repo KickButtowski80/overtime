@@ -93,6 +93,5 @@ Rails.application.configure do
    
   config.serve_static_files = true 
   config.assets.digest = true
-  
-  config.action_mailer.default_url_options = { :host => 'overtime-kick-buttoskw.herokuapp.com' }
-end
+   
+  config.action_mailer.default_url_options = { :host => 'overtime-kick-buttoskwi.herokuapp.com' } 
