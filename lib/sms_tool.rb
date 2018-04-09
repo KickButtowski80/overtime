@@ -10,8 +10,8 @@ module SmsTool
       
       body: "#{message}",
       to: "+1#{number}",
-      # from: ENV["TWILIO_PHONE_NUMBER"]
-      from: '+15005550006'
+      from: ENV["TWILIO_PHONE_NUMBER"]
+      # from: '+14242515130'
     )
   end
 end

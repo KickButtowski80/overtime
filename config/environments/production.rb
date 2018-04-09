@@ -94,7 +94,7 @@ Rails.application.configure do
   config.serve_static_files = true 
   config.assets.digest = true
    
-  config.action_mailer.default_url_options = { :host => 'overtime-kick-buttoskwi.herokuapp.com' }
+  config.action_mailer.default_url_options = {host: 'overtime-kick-buttoskwi.herokuapp.com/' , protocol: 'https://'}
   #  tested not working 
   # config.action_mailer.delivery_method = :mailgun
   # config.action_mailer.mailgun_settings = {
