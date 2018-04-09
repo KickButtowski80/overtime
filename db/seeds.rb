@@ -1,6 +1,6 @@
 @employee = Employee.create(email: "test@test.com", password: "asfdasdf", password_confirmation:"asfdasdf", first_name: "Jon", last_name: "Snow", phone: "4244420591")
 puts "1 employee created!"
-@admin_employee = AdminUser.create!(email: "pazpaz25@gmail.com", password: "asdfasdf", password_confirmation:"asdfasdf", first_name: "Admin", last_name: "Name", phone:"4244420591" )
+@admin_employee = AdminUser.create!(email: "igaligal613@gmail.com", password: "asdfasdf", password_confirmation:"asdfasdf", first_name: "Admin", last_name: "Name", phone:"4244420591" )
 puts "1 admin employee created!"
 5.times do |post|
     Post.create!(date: Date.today, rationale: "#{post} rationale content", user_id: @employee.id , overtime_request: 2.5)   
