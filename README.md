@@ -25,4 +25,4 @@
  - x Refactor posts/_form for admin user with status
  - 
  
-For more tutorial please visit [google](https://www.google.com)
+-->For more tutorial please visit [google](https://www.google.com)
