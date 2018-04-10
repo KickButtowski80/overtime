@@ -85,3 +85,5 @@ gem 'mailgunner', '~> 2.5'
 # Rails or Ruby application as it runs in production and transmits them 
 # to newrelic.com where you can monitor them in real time. 
 gem 'newrelic_rpm'
+
+gem 'loofah', '~> 2.0', '>= 2.0.3'
