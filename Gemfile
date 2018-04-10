@@ -80,3 +80,8 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'rails_12factor', group: :production
 
 gem 'mailgunner', '~> 2.5'
+
+# It provides you with deep information about the performance of your 
+# Rails or Ruby application as it runs in production and transmits them 
+# to newrelic.com where you can monitor them in real time. 
+gem 'newrelic_rpm'
