@@ -66,4 +66,18 @@ RSpec.describe User, type: :model do
        expect(@user.full_name).to eq("SNOW, JON")      
     end
   end
+  
+  describe 'relationship between admins and employees' do
+      it 'allows for admins to be associated with multiple employees' do
+          employee1 = FactoryBot.create(:user)
+          employee2 = FactoryBot.create(:user)
+          
+          admin = FactoryBot.create(:admin_user)
+          Hand.create!(user_id: admin.id, hand_id: employee1.id)
+          Hand.create!(user_id: admin.id, hand_id: employee2.id)
+          
+          expect(admin.hands.count).to eq(2)
+      end
+      
+  end
 end
