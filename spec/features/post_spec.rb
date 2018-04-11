@@ -46,7 +46,7 @@ describe 'navigate' do
     describe 'new' do
         #homepage is index from welcome controller        
         it 'has a link from the homepage' do 
-            employee = Employee.create!(first_name: 'Izak', last_name: 'T', email: 'employee@example.com', password: 'asdfasdf', password_confirmation:"asdfasdf", phone: "9999999999")
+            employee = Employee.create!(first_name: 'Izak', last_name: 'T', email: 'employee@example.com', password: 'asdfasdf', password_confirmation:"asdfasdf", phone: "9999999999", ssn: 1234, company: "ABC company")
             login_as(employee, :scope => :user)
             visit root_path
             

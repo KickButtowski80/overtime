@@ -31,6 +31,8 @@ FactoryBot.define do
         password "asdfasdf"
         password_confirmation "asdfasdf"
         phone "1234567890"
+        ssn 1234
+        company "ABC Company"
     end
     
     factory :admin_user , class: "AdminUser" do 
@@ -40,6 +42,8 @@ FactoryBot.define do
         password "asdfasdf"
         password_confirmation "asdfasdf"
         phone "1234567890"
+        ssn 1234
+        company "ABC Company"
     end
     
     factory :other_user , class: "User" do
@@ -49,6 +53,8 @@ FactoryBot.define do
         password "asdfasdf"
         password_confirmation "asdfasdf" 
         phone "1234567890"
+        ssn 1234
+        company "ABC Company"
         
     end
 end
